@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlchemyForge — Building Systems That Think & Feel</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  <div id="app-wrapper">
+   <div class="desktop-mode-banner" id="desktopBanner">
+    <div class="banner-content">
+     <div class="banner-title">
+      Best viewed on desktop
+     </div>
+     <p class="banner-text">For the full experience with all animations and interactions, switch to desktop site mode</p>
+    </div>
+    <div class="banner-actions"><button class="banner-btn btn-primary" onclick="enableDesktopMode()">Enable Desktop Mode</button> <button class="banner-btn btn-secondary" onclick="dismissBanner()">Continue Anyway</button>
+    </div>
+   </div>
+   <nav role="navigation">
+    <div class="logo">
+     GlitchForge
+    </div><button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"> <span></span> <span></span> <span></span> </button>
+    <ul class="nav-links" id="navLinks">
+     <li><a href="#home">Home</a></li>
+     <li><a href="#services">Services</a></li>
+     <li><a href="#projects">Work</a></li>
+     <li><a href="#about">About</a></li>
+     <li><a href="#contact">Contact</a></li>
+     <li><a href="https://glitchforge97.github.io/forge-portfolio" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+    </ul>
+   </nav>
+   <main>
+    <section id="home" class="hero">
+     <div class="hero-background"></div>
+     <div class="grid-overlay"></div>
+     <div class="hero-content">
+      <div class="hero-eyebrow">
+       ALCHEMYFORGE
+      </div>
+      <h1 class="hero-title">Building Systems<br>
+       That Think &amp; Feel</h1>
+      <p class="hero-subtitle">Independent student developer crafting interactive web experiences where logic meets design, and code serves purpose.</p><a href="#contact" class="hero-cta"> <span>Start a Conversation</span> <span>→</span> </a>
+     </div>
+    </section>
+    <section id="services">
+     <header class="section-header reveal">
+      <div class="section-eyebrow">
+       WHAT I BUILD
+      </div>
+      <h2 class="section-title">Focus Areas</h2>
+      <p class="section-subtitle">Where code meets interaction, and systems are built to feel intentional, responsive, and human.</p>
+     </header>
+     <div class="services-grid">
+      <div class="service-card reveal">
+       <h3>Interactive Web Systems</h3>
+       <p>Modern web projects with smooth animations, scroll-driven interactions, and responsive layouts that adapt to how people actually use them.</p>
+       <div class="service-outcomes"><span class="outcome-tag">Smooth Motion</span> <span class="outcome-tag">Clean Code</span> <span class="outcome-tag">Responsive</span>
+       </div>
+      </div>
+      <div class="service-card reveal">
+       <h3>Problem Solving &amp; Logic</h3>
+       <p>Daily practice with algorithms, data structures, and structured thinking to build solutions that work efficiently and make sense.</p>
+       <div class="service-outcomes"><span class="outcome-tag">Algorithms</span> <span class="outcome-tag">Structure</span> <span class="outcome-tag">Efficiency</span>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="projects">
+     <header class="section-header reveal">
+      <div class="section-eyebrow">
+       PORTFOLIO
+      </div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Selected work showcasing craftsmanship, technical excellence, and attention to detail.</p>
+     </header>
+     <div class="projects-grid">
+      <article class="project-card reveal">
+       <div class="project-image"></div>
+       <div class="project-content">
+        <div class="project-meta"><span class="project-tag">Analytics</span> <span class="project-tag">2024</span>
+        </div>
+        <h3>Forge Analytics</h3>
+        <p>A premium analytics dashboard designed to help modern businesses turn complex data into clear, actionable insights. Combining intuitive dashboards, real-time tracking, and flexible visualization for faster decision-making.</p><a href="https://glitchforge97.github.io/forgeanalytics/" class="project-link" target="_blank" rel="noopener noreferrer"> <span>View Project</span> <span>→</span> </a>
+       </div>
+      </article>
+      <article class="project-card reveal">
+       <div class="project-image"></div>
+       <div class="project-content">
+        <div class="project-meta"><span class="project-tag">Product</span> <span class="project-tag">2024</span>
+        </div>
+        <h3>NeuroForge</h3>
+        <p>A premium product landing experience designed to communicate the value of human-AI collaboration. By combining human-centered storytelling with modern interactive design, it transforms abstract concepts into compelling narratives.</p><a href="https://glitchforge97.github.io/neuro-forge/" class="project-link" target="_blank" rel="noopener noreferrer"> <span>View Project</span> <span>→</span> </a>
+       </div>
+      </article>
+      <article class="project-card reveal">
+       <div class="project-image"></div>
+       <div class="project-content">
+        <div class="project-meta"><span class="project-tag">Productivity</span> <span class="project-tag">2024</span>
+        </div>
+        <h3>ForgeTask</h3>
+        <p>A premium productivity platform designed to bring tasks, ideas, habits, and focus into one cohesive workflow. By unifying planning, execution, and reflection, it eliminates fragmentation and mental overload.</p><a href="https://glitchforge97.github.io/forgetask/" class="project-link" target="_blank" rel="noopener noreferrer"> <span>View Project</span> <span>→</span> </a>
+       </div>
+      </article>
+      <article class="project-card reveal">
+       <div class="project-image"></div>
+       <div class="project-content">
+        <div class="project-meta"><span class="project-tag">Healthcare</span> <span class="project-tag">2024</span>
+        </div>
+        <h3>ForgeCare Medical Center</h3>
+        <p>A modern digital hospital platform built to simplify how patients discover doctors, book appointments, and access care across multiple locations in Bangladesh. Designed with refined responsiveness and thoughtful user flow, it feels reliable, calm, and premium—making healthcare access faster and more organized.</p><a href="https://glitchforge97.github.io/forge-care" class="project-link" target="_blank" rel="noopener noreferrer"> <span>View Project</span> <span>→</span> </a>
+       </div>
+      </article>
+      <article class="project-card reveal">
+       <div class="project-image"></div>
+       <div class="project-content">
+        <div class="project-meta"><span class="project-tag">Dining</span> <span class="project-tag">2024</span>
+        </div>
+        <h3>Forge's Atrium</h3>
+        <p>A refined fine-dining platform designed for restaurants that want to deliver a seamless, high-end guest experience. It helps guests explore menus, reserve tables, and plan dining effortlessly, while giving restaurant teams a clear way to manage operations. Built for upscale dining in Dhaka with elegance and practicality.</p><a href="https://glitchforge97.github.io/forge-atrium/" class="project-link" target="_blank" rel="noopener noreferrer"> <span>View Project</span> <span>→</span> </a>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section id="process">
+     <header class="section-header reveal">
+      <div class="section-eyebrow">
+       HOW I WORK
+      </div>
+      <h2 class="section-title">My Process</h2>
+      <p class="section-subtitle">A structured, transparent approach that ensures quality at every stage.</p>
+     </header>
+     <div class="process-timeline">
+      <div class="process-step reveal">
+       <div class="process-number"><span>01</span>
+       </div>
+       <div class="process-content">
+        <h3>Discovery &amp; Strategy</h3>
+        <p>Deep dive into your goals, audience, and requirements. We define success metrics, technical approach, and project scope with complete clarity.</p>
+       </div>
+      </div>
+      <div class="process-step reveal">
+       <div class="process-number"><span>02</span>
+       </div>
+       <div class="process-content">
+        <h3>Design &amp; Architecture</h3>
+        <p>Crafting the visual language and technical foundation. Every design decision is intentional, every interaction is considered.</p>
+       </div>
+      </div>
+      <div class="process-step reveal">
+       <div class="process-number"><span>03</span>
+       </div>
+       <div class="process-content">
+        <h3>Development &amp; Testing</h3>
+        <p>Building with clean code, optimized performance, and rigorous quality assurance. Every feature works flawlessly across all devices.</p>
+       </div>
+      </div>
+      <div class="process-step reveal">
+       <div class="process-number"><span>04</span>
+       </div>
+       <div class="process-content">
+        <h3>Launch &amp; Support</h3>
+        <p>Smooth deployment with post-launch monitoring and support. Your success is the measure of mine.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="tech">
+     <header class="section-header reveal">
+      <div class="section-eyebrow">
+       TECHNOLOGIES
+      </div>
+      <h2 class="section-title">Tech Stack</h2>
+      <p class="section-subtitle">Modern tools and frameworks chosen for their performance, reliability, and developer experience.</p>
+     </header>
+     <div class="tech-grid">
+      <div class="tech-item reveal"><span class="tech-name">JavaScript</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Python</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">C++</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">HTML5</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">CSS3</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">CSS Grid</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Flexbox</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Chart.js</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Git</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">GitHub</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">GitHub Pages</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">VS Code</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">LocalStorage</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Canvas API</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Geolocation API</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Intersection Observer</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Responsive Design</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Web Animations</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Data Structures</span>
+      </div>
+      <div class="tech-item reveal"><span class="tech-name">Algorithms</span>
+      </div>
+     </div>
+    </section>
+    <section id="about">
+     <header class="section-header reveal">
+      <div class="section-eyebrow">
+       ABOUT
+      </div>
+      <h2 class="section-title">Independent Builder</h2>
+     </header>
+     <div class="about-content">
+      <div class="about-text reveal">
+       <p>I'm <strong>Sharek Jabir</strong>, a student developer from Dhaka who builds under the name GlitchForge. This isn't about copying trends or stacking frameworks—it's about understanding how systems think, respond, and feel.</p>
+       <p>I focus on the intersection of logic and design. My work explores how code can create expressive interfaces, how small interactions shape user experience, and how clean structure supports everything else. Every project is a chance to solve real problems while learning something new.</p>
+       <p>I don't pretend to be a senior developer. I'm building foundations—practicing algorithms, studying architecture, and creating projects that feel intentional rather than assembled. The goal isn't just output; it's depth, clarity, and craft.</p>
+      </div>
+      <div class="about-stats reveal">
+       <div class="stat-card"><span class="stat-number">200+</span> <span class="stat-label">Problems Solved</span>
+       </div>
+       <div class="stat-card"><span class="stat-number">25+</span> <span class="stat-label">Projects Built</span>
+       </div>
+       <div class="stat-card"><span class="stat-number">Daily</span> <span class="stat-label">Learning Habit</span>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="contact">
+     <header class="section-header reveal">
+      <div class="section-eyebrow">
+       GET IN TOUCH
+      </div> 
+      <h2 class="section-title">Start a Project</h2>
+      <p class="section-subtitle">Have an idea? Let's discuss how we can bring it to life with precision and purpose.</p>
+     </header>
+     <div class="contact-wrapper">
+      <form class="contact-form reveal">
+       <div class="form-group"><label for="name">Your Name</label> <input type="text" id="name" name="name" required>
+       </div>
+       <div class="form-group"><label for="email">Email Address</label> <input type="email" id="email" name="email" required>
+       </div>
+       <div class="form-group"><label for="project">Project Details</label> <textarea id="project" name="project" required></textarea>
+       </div><button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      <div class="contact-links reveal"><a href="mailto:glitchforge97@gmail.com" class="contact-link" target="_blank" rel="noopener noreferrer"> <span>Email</span> </a> <a href="https://github.com/GlitchForge97" class="contact-link" target="_blank" rel="noopener noreferrer"> <span>GitHub</span> </a> <a href="https://www.linkedin.com/in/md-sharek-6a51362a8/" class="contact-link" target="_blank" rel="noopener noreferrer"> <span>LinkedIn</span> </a>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer>
+    <div class="footer-content">
+     <div class="footer-logo">
+      GlitchForge
+     </div>
+     <p class="footer-text">Built by Sharek Jabir — Student developer from Dhaka, Bangladesh</p>
+     <div class="footer-links"><a href="#home">Home</a> <a href="#services">Services</a> <a href="#projects">Work</a> <a href="#about">About</a> <a href="#contact">Contact</a> <a href="https://glitchforge97.github.io/forge-portfolio" target="_blank" rel="noopener noreferrer">Portfolio</a>
+     </div>
+     <p class="copyright">© 2026 GlitchForge. Built with intention.</p>
+     <p class="powered-by">Powered by GlitchForge</p>
+    </div>
+   </footer>
+  </div>
+  <script src="script.js"></script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b7b5613605c9325',t:'MTc2NzM2ODIzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
