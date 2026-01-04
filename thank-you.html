@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Received — AlchemyForge</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  <div id="app-wrapper">
+   <nav role="navigation">
+    <div class="logo">
+     GlitchForge
+    </div><button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"> <span></span> <span></span> <span></span> </button>
+    <ul class="nav-links" id="navLinks">
+     <li><a href="index.html#home">Home</a></li>
+     <li><a href="index.html#services">Services</a></li>
+     <li><a href="index.html#projects">Work</a></li>
+     <li><a href="index.html#about">About</a></li>
+     <li><a href="index.html#contact">Contact</a></li>
+     <li><a href="https://glitchforge97.github.io/forge-portfolio" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+    </ul>
+   </nav>
+   <main>
+    <section class="thank-you-hero">
+     <div class="thank-you-background"></div>
+     <div class="grid-overlay"></div>
+     <div class="thank-you-content">
+      <div class="floating-shapes">
+       <div class="shape shape-1"></div>
+       <div class="shape shape-2"></div>
+       <div class="shape shape-3"></div>
+      </div>
+      <div class="thank-you-inner">
+       <div class="thank-you-icon">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+         <circle cx="50" cy="50" r="45" fill="none" stroke="#00ff88" stroke-width="2" stroke-dasharray="283" stroke-dashoffset="283">
+          <animate attributeName="stroke-dashoffset" from="283" to="0" dur="2s" fill="freeze"/>
+         </circle>
+         <polyline points="35,55 45,65 65,35" fill="none" stroke="#00ff88" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="50" stroke-dashoffset="50">
+          <animate attributeName="stroke-dashoffset" from="50" to="0" dur="2s" fill="freeze" begin="0.3s"/>
+         </polyline>
+        </svg>
+       </div>
+       <h1 class="thank-you-title">Message Received</h1>
+       <p class="thank-you-subtitle">Thanks for reaching out! I've received your message and will get back to you shortly. Looking forward to discussing your project.</p>
+       <div class="thank-you-actions">
+        <a href="index.html" class="thank-you-btn primary"> <span>Back to Home</span> <span>→</span> </a>
+        <a href="index.html#projects" class="thank-you-btn secondary"> <span>See My Work</span> <span>→</span> </a>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer>
+    <div class="footer-content">
+     <div class="footer-logo">
+      GlitchForge
+     </div>
+     <p class="footer-text">Built by Sharek Jabir — Student developer from Dhaka, Bangladesh</p>
+     <div class="footer-links"><a href="index.html#home">Home</a> <a href="index.html#services">Services</a> <a href="index.html#projects">Work</a> <a href="index.html#about">About</a> <a href="index.html#contact">Contact</a> <a href="https://glitchforge97.github.io/forge-portfolio" target="_blank" rel="noopener noreferrer">Portfolio</a>
+     </div>
+     <p class="copyright">© 2026 GlitchForge. Built with intention.</p>
+     <p class="powered-by">Powered by GlitchForge</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  navToggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
+
+  window.addEventListener('click', (e) => {
+    if (!e.target.closest('nav') && navLinks.classList.contains('active')) {
+      navLinks.classList.remove('active');
+    }
+  });
+
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  const cursor = document.querySelector('.cursor');
+  const cursorFollower = document.querySelector('.cursor-follower');
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    cursorFollower.style.left = (e.clientX - 4) + 'px';
+    cursorFollower.style.top = (e.clientY - 4) + 'px';
+  });
+
+  document.addEventListener('mouseenter', () => {
+    cursor.style.opacity = '1';
+    cursorFollower.style.opacity = '1';
+  });
+
+  document.addEventListener('mouseleave', () => {
+    cursor.style.opacity = '0';
+    cursorFollower.style.opacity = '0';
+  });
+
+  const links = document.querySelectorAll('a, button');
+  links.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      cursor.style.transform = 'scale(1.5)';
+      cursor.style.borderColor = '#ffffff';
+    });
+    link.addEventListener('mouseleave', () => {
+      cursor.style.transform = 'scale(1)';
+      cursor.style.borderColor = '#00ff88';
+    });
+  });
+});
+  </script>
+ </body>
+</html>
